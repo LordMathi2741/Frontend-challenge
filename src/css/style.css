@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Noto Sans JP", sans-serif;
+    background-color: #F0F3FF;
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4 {
+    color:#211951;
+}
+
+hr {
+    width: 100px;
+    height: 2px;
+    border: 0;
+    background-color:#211951;
+
+}
+
+.nav-container {
+    width:100%;
+    display: flex;
+    background-color: #F0F3FF;
+}
+.logo-container {
+    width:20%
+}
+
+img, li{
+    transition: all(1.4s);
+}
+
+.logo-container img:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+.nav-bar {
+    width:80%;
+    padding-top: 1%;
+    margin-right: 1%;
+}
+
+ .nav-bar ul{
+   display: flex;
+   flex-direction: row;
+   gap: 1.5rem;
+   justify-content: right;
+}
+
+.nav-bar li {
+    list-style: none;
+    text-align: right;
+    font-size: 15px;
+    color:#15F5BA;
+}
+
+.nav-bar li:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+    color: #211951
+}
+
+.home-screen-container {
+    width: 100%;
+    display: flex;
+    padding-top: 1%;
+    background-blend-mode: darken;
+
+}
+
+.home-screen-container .left-media{
+   width:70%;
+   text-align: center;
+}
+
+.home-screen-container .right-media {
+    width: 30%;
+    margin-right: 1.5%;
+}
+
+
+.home-screen-container .left-media h1,p {
+    color: #211951;
+}
+
+.about-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding-top: 5%;
+    box-shadow: #211951 1px 7px 10px;
+    margin-left: 4%;
+    padding:10px;
+
+}
+
+
+.about-container .first-able {
+    width: 100%;
+    display: flex;
+    margin-left: 1%;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.about-container .first-able .p {
+    width: 50%;
+    margin-left: 1%;
+}
+
+.about-container .first-able .img-container {
+    width: 40%;
+    text-align: center;
+}
+
+.about-container .second-able {
+    display: flex;
+    padding-top: 2%;
+    gap:2.5rem;
+    width: 90%;
+}
+
+.about-container .second-able .p{
+    width: 45%;
+    gap: 1rem;
+    text-align: left;
+}
+
+.about-container .second-able .img-container {
+    width: 50%;
+    text-align: left;
+}
+/***** Media queries *****/  
+
+@media (max-width:500px){
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar ul {
+        flex-direction: column;
+    }
+    .logo-container {
+        width: 10%;
+    }
+    .nav-bar {
+        width: 30%;
+    }
+    .nav-bar li {
+        text-align: center;
+    }
+}
+
+/***** End Media queries *****/
