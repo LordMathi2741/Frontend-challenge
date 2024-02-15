@@ -63,6 +63,10 @@ img, li{
     margin-right: 1%;
 }
 
+.nav-bar.visible {
+    display: block; /* Mostrar el menú de navegación cuando tiene la clase visible */
+}
+
  .nav-bar ul{
    display: flex;
    flex-direction: row;
@@ -219,8 +223,10 @@ img, li{
     }
 
      .open,.close {
-
         display: block;
+    }
+    .open.visible {
+        display: none;
     }
  
     hr{
